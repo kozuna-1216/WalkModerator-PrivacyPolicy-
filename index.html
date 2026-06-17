@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Walk Moderator / PaceWalk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --container-bg: #ffffff;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+            --primary: #0284c7;
+            --primary-hover: #0369a1;
+            --border-color: #e2e8f0;
+            --accent: #e0f2fe;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --transition: all 0.2s ease-in-out;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --container-bg: #1e293b;
+                --text-color: #f1f5f9;
+                --text-muted: #94a3b8;
+                --primary: #38bdf8;
+                --primary-hover: #7dd3fc;
+                --border-color: #334155;
+                --accent: #0c4a6e;
+                --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+            transition: var(--transition);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .title-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .app-icon-placeholder {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 8px;
+        }
+
+        .lang-btn {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .lang-btn.active {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background-color: var(--border-color);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-color);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background-color: var(--accent);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .meta-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .meta-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Lang toggle visibility helper */
+        [lang="en"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="title-area">
+            <div class="app-icon-placeholder">W</div>
+            <h1>Walk Moderator / PaceWalk</h1>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('ja')">日本語</button>
+            <button class="lang-btn" onclick="switchLang('en')">English</button>
+        </div>
+    </header>
+
+    <!-- JAPANESE CONTENT -->
+    <div id="content-ja" lang="ja">
+        <div class="highlight-box">
+            <p>※ 本アプリはプライバシーを最優先に設計されており、お客様の健康データを外部サーバーに送信または収集することは一切ありません。</p>
+        </div>
+
+        <section>
+            <h2>1. 個人情報の取得と利用目的</h2>
+            <p>当アプリは、以下の情報を取得・利用します。</p>
+            <ul>
+                <li><strong>ヘルスケアデータ（歩数データ）:</strong> Appleのヘルスケア（HealthKit）から当日の歩数データを取得します。これは「当日の歩数の表示」および「設定された目標歩数・警告歩数（歩きすぎ防止ライン）に基づくアラートや状態の判定」のために使用されます。</li>
+                <li><strong>アプリ内設定値:</strong> ユーザー自身が設定した目標歩数や警告歩数は、アプリの機能をカスタマイズするためにローカルに保存されます。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. データの送信および共有について</h2>
+            <p>当アプリで読み取ったヘルスケアデータ、およびユーザーのアプリ内設定は、<strong>すべてお客様の端末内（オンデバイス）でのみ処理・保存され、外部のサーバー等に送信されることはありません。</strong></p>
+            <p>また、広告への利用や第三者への提供、共有も一切行いません。</p>
+        </section>
+
+        <section>
+            <h2>3. データの管理とアクセス許可の変更</h2>
+            <p>ユーザーは、iOSの設定アプリ（「設定」 &gt; 「プライバシーとセキュリティ」 &gt; 「ヘルスケア」 &gt; アプリ名）から、いつでもヘルスケアデータへのアクセス許可を有効化・無効化することができます。</p>
+            <p>アクセスを無効にした場合、ヘルスケアからの自動歩数取得は行われません。</p>
+        </section>
+
+        <section>
+            <h2>4. プライバシーポリシーの変更</h2>
+            <p>本プライバシーポリシーは、アプリの機能追加や法改正等に伴い、予告なく変更される場合があります。最新のポリシーは常に本ページにて公開されます。</p>
+        </section>
+
+        <section>
+            <h2>5. お問い合わせ</h2>
+            <p>本ポリシーまたはアプリに関するご質問やご意見がございましたら、以下のメールアドレスまでお問い合わせください。</p>
+            <p><strong>メールアドレス:</strong> <span class="contact-email">your.email@example.com</span>（※申請用のアドレスに変更してください）</p>
+        </section>
+
+        <div class="meta-info">
+            制定日: 2026年6月17日<br>
+            © 2026 Walk Moderator Developer
+        </div>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" lang="en">
+        <div class="highlight-box">
+            <p>Note: This app is designed with privacy as the top priority. We never transmit or collect your health data on any external servers.</p>
+        </div>
+
+        <section>
+            <h2>1. Information We Access and Purpose</h2>
+            <p>The app accesses and uses the following information:</p>
+            <ul>
+                <li><strong>HealthKit Data (Step Counts):</strong> The app reads step counts for the current day from Apple Health (HealthKit). This is used strictly to show daily steps and display status alerts based on your custom "Goal Steps" and "Warning Steps" (to prevent overwalking).</li>
+                <li><strong>Local Settings:</strong> Your customized step goals and thresholds are stored locally to personalize the app features.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Data Transmission and Sharing</h2>
+            <p><strong>All HealthKit data and settings are processed and stored locally on your device (on-device processing). We do not send or upload any of your health or settings data to external servers.</strong></p>
+            <p>We do not use HealthKit data for advertising, marketing, or sharing with any third parties.</p>
+        </section>
+
+        <section>
+            <h2>3. User Control & Access Permissions</h2>
+            <p>You can enable or disable the app's access to HealthKit data at any time via the iOS Settings app ("Settings" &gt; "Privacy & Security" &gt; "Health" &gt; App Name).</p>
+            <p>If you disable access, the app will not be able to track your steps automatically.</p>
+        </section>
+
+        <section>
+            <h2>4. Changes to This Privacy Policy</h2>
+            <p>This Privacy Policy may be updated from time to time. The latest version will always be published on this page.</p>
+        </section>
+
+        <section>
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions or feedback regarding this policy or the app, please contact us at:</p>
+            <p><strong>Email:</strong> <span class="contact-email">your.email@example.com</span> (Please replace with your email address)</p>
+        </section>
+
+        <div class="meta-info">
+            Effective Date: June 17, 2026<br>
+            © 2026 Walk Moderator Developer
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchLang(lang) {
+        // Toggle buttons
+        const buttons = document.querySelectorAll('.lang-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        // Find clicked button
+        const clickedBtn = Array.from(buttons).find(btn => 
+            (lang === 'ja' && btn.textContent === '日本語') || 
+            (lang === 'en' && btn.textContent === 'English')
+        );
+        if (clickedBtn) clickedBtn.classList.add('active');
+
+        // Toggle contents
+        const jaContent = document.getElementById('content-ja');
+        const enContent = document.getElementById('content-en');
+
+        if (lang === 'ja') {
+            jaContent.style.display = 'block';
+            enContent.style.display = 'none';
+            document.documentElement.lang = 'ja';
+        } else {
+            jaContent.style.display = 'none';
+            enContent.style.display = 'block';
+            document.documentElement.lang = 'en';
+        }
+    }
+</script>
+</body>
+</html>
